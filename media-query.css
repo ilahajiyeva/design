@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 480px) {
+    .kitchen,
+    .bathroom,
+    .bedroom,
+    .vintage,
+    .classic,
+    .retro {
+        margin-bottom: 8px;
+    }
+    .container-image {
+        margin-bottom: 8px;
+    }
+    .container-image2 {
+        margin-bottom: 8px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container-image {
+        margin-bottom: 8px;
+    }
+    .container-image img {
+        height: 100%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+
+
+}

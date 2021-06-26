@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 3px 0px 3px #000;
+}
+.navbar .navbar-nav {
+    text-transform: capitalize;
+}
+.carousel-inner img {
+    opacity: .4;
+}
+.carousel-caption {
+    top: 20%;
+    color: #000;
+}
+.carousel-caption p {
+    font-size: 30px;
+    font-family: cursive;
+}
+.carousel-caption .btn {
+    background-color: transparent;
+    border: 2px solid #000;
+    width: 200px;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-top: 90px;
+}
+
+
+/*ABOUT SECTION*/
+section h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+.about-section span,
+.project-section span,
+.survey-section span{
+    color: crimson;
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-section .lni {
+    font-size: 50px;
+    color: crimson;
+}
+.about-section .about-caption {
+    text-transform: uppercase;
+}
+.project-row {
+    position: relative;
+}
+
+
+.project-section button {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*SURVEY SECTION*/
+.survey-section .box {
+    background-color: crimson;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+}
+.survey-section span {
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+}
+.survey-section span:first-child{
+    letter-spacing: 2px;
+}
+
+/*REVIEWS SECTION*/
+
+
+
+.reviews-slider {
+    margin: 0 auto;
+    max-width: 740px;
+}
+
+.reviews-slide_viewer {
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.reviews-slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.reviews-slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.reviews-slide img {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    left: 40%;
+    top: 5%;
+
+}
+.reviews-slide-image-caption {
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 16%;
+}
+
+.reviews-slide:first-child {
+    display: block;
+}
+
+.reviews-slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+a.reviews-slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.reviews-slide_btn.active, .reviews-slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+}
+
+.directional_nav {
+    height: 340px;
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+    top: -340px;
+}
+
+.reviews-previous_btn {
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+}
+
+.reviews-next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 100px;
+    top: 0;
+}
+
+.reviews-previous_btn, .reviews-next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+}
+
+.reviews-previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .reviews-previous_btn {
+        left: 50px;
+    }
+    .reviews-next_btn {
+        right: 50px;
+    }
+}
+
+/*OUT PrOJECts SECTION*/
+.links {
+    word-spacing: 8px;
+    letter-spacing: 3px;
+}
+.kitchen,
+.bathroom,
+.bedroom,
+.vintage,
+.classic,
+.retro{
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.kitchen:hover .image,
+.bathroom:hover .image,
+.classic:hover .image,
+.vintage:hover .image,
+.bedroom:hover .image,
+.retro:hover .image  {
+    opacity: 0.3;
+}
+
+.kitchen:hover .middle,
+.bathroom:hover .middle,
+.classic:hover .middle,
+.vintage:hover .middle,
+.bedroom:hover .middle,
+.retro:hover .middle {
+    opacity: 1;
+}
+
+.middle-text {
+    color: crimson;
+    font-size: 20px;
+
+}
+
+.card {
+    transition: all .5s ease;
+    border: none;
+    text-decoration: none;
+}
+.card-body {
+    letter-spacing: 2px;
+}
+.card:hover {
+    box-shadow: 3px 3px 5px 2px silver;
+    text-decoration: none;
+}
