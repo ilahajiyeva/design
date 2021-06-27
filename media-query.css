@@ -29,10 +29,19 @@
         height: 100%;
     }
 
+    .reviews-slide img {
+        left: 35%;
+    }
     footer {
         font-size: 10px;
     }
 
+    .carousel-caption .btn {
+        margin-top: 50px;
+    }
+    .about-section  {
+        text-align: center;
+    }
 
 
 }
